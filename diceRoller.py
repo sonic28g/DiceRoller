@@ -32,7 +32,7 @@ while(opt != '0'):
                 print("ERROR: Incorrect type of attributes! Please try again.")
                 print("========================================================\n")
             else:
-                print("Rolling ",num[0],"dice(s) of ",num[1])
+                print("Rolling",num[0],"dice(s) of",num[1],":")
                 i = 0
                 while i < int(num[0]):
                     print(random.randint(0,int(num[1])))
@@ -44,7 +44,7 @@ while(opt != '0'):
     #Intstructions
     elif(opt == '2'):
         print("\n========================================================")
-        print("For this program you only need to input to number:")
+        print("For this program you only need to input two numbers:")
         print(" -> The number of dices you want to rolle (N)")
         print(" -> The the type of dice you want to rolle (T)\n")
         print("Exemple:\nInsert number od dices to rolle and type of dice: N T\n")
