@@ -22,7 +22,7 @@ while(opt != '0'):
         yn = 'Y'
         while(yn == 'Y'):
             print("\n========================================================")
-            text= input("Insert number od dices to rolle and type of dice: ")
+            text= input("Insert number of dices to rolle and type of dice: ")
             num = text.split()
 
             if(len(num) != 2):
@@ -35,7 +35,7 @@ while(opt != '0'):
                 print("Rolling",num[0],"dice(s) of",num[1],":")
                 i = 0
                 while i < int(num[0]):
-                    print(random.randint(0,int(num[1])))
+                    print(random.randint(0,int(num[1])-1) + 1)
                     i = i+1
                 yn = input("Do you want to change and rolle the dice again? (Y/else): ") 
                 print("========================================================\n")
